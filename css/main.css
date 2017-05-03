@@ -1,0 +1,28 @@
+.input-group {
+  margin-bottom: 10px;
+}
+.btn-group {
+  margin-top: 10px;
+}
+.btn-group button {
+  border: none;
+}
+.main-btn-more{
+  margin-bottom:30px;
+}
+.bottom30{
+  margin-bottom:30px;
+}
+.clearfix:after{
+  content: '';
+  display:block;
+  height:0;
+  clear:both;
+  visibility: hidden;
+}
+.clearfix{
+  zoom:1;
+}
+.left15{
+  margin-left:15px;
+}

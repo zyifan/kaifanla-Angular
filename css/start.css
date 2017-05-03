@@ -1,0 +1,22 @@
+#startContainer{
+  position:absolute;
+  bottom:0;
+  top:0;
+  left:0;
+  right:0;
+  width:100%;
+}
+#startMain{
+  display:table;
+  width:100%;
+  height:100%;
+}
+#start {
+  display:table-cell;
+  vertical-align: middle;
+  cursor: pointer;
+}
+#start h1 {
+  font-size: 110px;
+  margin-top:-50px;
+}
