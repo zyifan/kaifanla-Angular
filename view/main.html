@@ -1,0 +1,60 @@
+<div class="navbar navbar-default">
+    <div class="container">
+        <div class="navbar-header">
+            <button class="navbar-toggle" data-toggle="collapse" data-target="#dish-list">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div class="navbar-brand">
+                <a href="#/start" class="blue-font h3">开饭啦</a>
+            </div>
+        </div>
+        <div class="collapse navbar-collapse">
+            <!-- todo：main菜单导航条设置-->
+        </div>
+    </div>
+</div>
+<div class="container">
+    <label>美食搜索</label>
+    <div class="input-group">
+        <input type="search" ng-model="filtertext" class="form-control"/>
+        <span class="input-group-btn" ng-click="filterList()">
+            <button class="btn btn-default">搜索</button>
+        </span>
+    </div>
+    <div class="list-group">
+        <a href="#/detail/{{dish.id}}" class="list-group-item" ng-repeat="dish in arr">
+            <div class="media">
+                <div class="media-left media-middle">
+                    <img ng-src="img/{{dish.img}}"/>
+                </div>
+                <div class="media-body">
+                    <h4>{{dish.name}}</h4>
+                    <p>{{dish.material}}</p>
+                </div>
+            </div>
+        </a>
+    </div>
+    <button class="btn btn-primary btn-block main-btn-more" ng-click="addMore()">
+        <span ng-if="changeMode && addtext">加载更多</span>
+        <span ng-if="changeMode && !addtext">加载中...</span>
+        <span ng-if="!changeMode">没有更多数据</span>
+    </button>
+</div>
+<!--<div class="btn-group btn-group-justified">
+    <div class="btn-group">
+        <button class="btn btn-default"><span class="glyphicon glyphicon-home text-primary"></span></a></button>
+    </div>
+    <div class="btn-group">
+        <button class="btn btn-default"><span class="glyphicon glyphicon-user text-primary"></span></a></button>
+    </div>
+    <div class="btn-group">
+        <button class="btn btn-default"><span class="glyphicon glyphicon-th-list text-primary"></span></a></button>
+    </div>
+</div>-->
+<!--<div class="nav nav-tabs nav-justified">
+    <li><a href="#"><span class="glyphicon glyphicon-home text-primary"></span></a></a></li>
+    <li><a href="#"><span class="glyphicon glyphicon-user text-primary"></span></a></a></li>
+    <li><a href="#"><span class="glyphicon glyphicon-th-list text-primary"></span></a></a></li>
+</div>-->
